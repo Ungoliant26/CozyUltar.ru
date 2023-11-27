@@ -6,40 +6,64 @@
 
 @section('content')
 
-    <div class="backgrond-ctulhu">
+<div class="backgrond-ctulhu">
 
-    <header>
+    <header class="content-text">
         <div class="container-fluid">
             <div class="row">
-                <div class="mt-5 col-sm-5 offset-sm-2 col-md-8 offset-md-5">
-                    <h1 class="text-center text-uppercase mt-5">Worlds of Lovecraft</h1>
+                <div class="col-8 mt-5 text-end">
+                    <h1>Worlds</h1>
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-8 text-end">
+                    <h1>of</h1>
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-9 text-end">
+                    <h1>Lovecraft</h1>
                 </div>
             </div>
         </div>
     </header>
 
-    <section class="buttons-mid">
-        <div class="container-fluid">
-            <div class="row">
-                <div class="col-xl-4 col-md-6 col-sm-12">
-                    <button type="button" class="btn btn-books btn-outline-primary btn-lg">Биография<br>Библиография</button>
+    <section class="content-bio-media">
+        <div class="container-fluid text-center">
+            <div class="row align-items-center">
+
+                <div class="col text-start">
+                    <div class="col p-1">
+                        <button type="button" class="btn btn-vertical btn-primary btn-lg">Биография</button>
+                    </div>
+                    <div class="col p-1">
+                        <button type="button" class="btn btn-vertical btn-primary btn-lg">Библиография</button>
+                    </div>
                 </div>
-                <div class="col-xl-4 col-md-6 col-sm-12">
-                    <button type="button" class="btn btn-media btn-outline-primary btn-lg">Фильмы<br>Игры</button>
+
+                <div class="col-6 text-end">
+                    <div class="col-12 p-1">
+                        <button type="button" class="btn btn-vertical btn-primary btn-lg">Фильмы</button>
+                    </div>
+                    <div class="col-12 p-1">
+                        <button type="button" class="btn btn-vertical btn-primary btn-lg">Игры</button>
+                    </div>
                 </div>
+
             </div>
         </div>
     </section>
 
-    <footer>
-        <div class="container-fluid">
-            <div class="row">
-                <div class="col-xl-4 col-md-6 col-sm-12">
-                    <button type="button" class="btn btn-creatures btn-outline-primary btn-lg">Бестирарий</button>
+    <footer class="fixed-bottom">
+        <div class="container-fluid text-center">
+            <div class="row align-items-center">
+                <div class="col-12 p-1">
+                    <button type="button" class="btn btn-horizont btn-primary btn-lg">Бестирарий</button>
                 </div>
             </div>
         </div>
     </footer>
-    </div>
+
+</div>
 
 @endsection

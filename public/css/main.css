@@ -1,24 +1,26 @@
 .backgrond-ctulhu {
-    background: url("../img/pages/home/Main.jpg");
+    background: url("../img/pages/home/Main.webp") center no-repeat;
+    width:100%;
+    height:100%;
+    background-size:cover;
+    /*position: relative;*/
+}
+
+.content-text {
+    font-style: inherit;
+    top: 5rem;
 }
 
 h1 {
-    font-size: 50px;
+    font-size: 3rem;
 }
 
-.btn-books .btn-media .btn-creatures {
-    width: 100px;
-    height: 150px;
-    display: flex;
-    justify-content: center;
-    align-items: center;
+.btn-vertical {
+    width: 10rem;
+    height: 4rem;
 }
 
-.btn-books {
-    position: relative;
-}
-
-.btn-media {
-    position: absolute;
-    right: 0.9rem;
+.btn-horizont {
+    width: 10rem;
+    height: 4rem;
 }
