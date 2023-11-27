@@ -1,0 +1,24 @@
+.backgrond-ctulhu {
+    background: url("../img/pages/home/Main.jpg");
+}
+
+h1 {
+    font-size: 50px;
+}
+
+.btn-books .btn-media .btn-creatures {
+    width: 100px;
+    height: 150px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.btn-books {
+    position: relative;
+}
+
+.btn-media {
+    position: absolute;
+    right: 0.9rem;
+}
