@@ -6,7 +6,7 @@
 
 @section('content')
 
-<div class="backgrond-ctulhu">
+<div class="background-ctulhu">
 
     <header class="content-text">
         <div class="container-fluid">
@@ -14,6 +14,7 @@
                 <div class="col-lg-10 mt-lg-5 col-md mt-md col-sm mt-sm text-lg-end text-md-center text-sm-center">
                     <h1>Worlds of Lovecraft</h1>
                 </div>
+            </div>
         </div>
     </header>
 
@@ -28,7 +29,7 @@
                         <button type="button" class="btn btn-vertical btn-primary btn-lg">Биография</button>
                     </div>
                     <div class="col p-1">
-                        <button type="button" class="btn btn-vertical btn-primary btn-lg">Библиография</button>
+                        <button type="button" class="btn btn-vertical btn-primary btn-lg" onclick="document.location='{{ route('my.books') }}'">Библиография</button>
                     </div>
                 </div>
 
