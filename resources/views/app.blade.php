@@ -14,12 +14,19 @@
         @yield('title')
     </title>
 </head>
-<body>
+<body class="background">
 
 @yield('content')
 
-<script type="text/javascript" src="{{ asset('Parallaxjs/parallax.min.js') }}"></script>
 <script src="{{ asset('js/bootstrap.bundle.min.js') }}"></script>
+
+<script type="text/javascript" src="{{ asset('vendors/Parallaxjs/demo/libs/jq.js') }}"></script>
+<link rel="Stylesheet" type="text/css" href="{{ asset('vendors/Parallaxjs/demo/libs/xo.css') }}" />
+
+<script src="{{ asset('vendors/Parallaxjs/parallax.min.js') }}"></script>
+<script type="text/javascript" src="{{ asset('vendors/Parallaxjs/demo/index.js') }}"></script>
+<script type="text/javascript" src="{{ asset('vendors/Parallaxjs/demo/examples.js') }}"></script>
+<link rel="Stylesheet" type="text/css" href="{{ asset('vendors/Parallaxjs/demo/index.css') }}" />
 
 </body>
 </html>
