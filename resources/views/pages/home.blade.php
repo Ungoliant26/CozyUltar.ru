@@ -24,21 +24,13 @@
 
             <div class="row">
 
-                <div class="col text-start">
-                    <div class="col p-1">
-                        <button type="button" class="btn btn-vertical btn-primary btn-lg">Биография</button>
+                    <div class="col text-start ">
+                        <button type="button" class="btn btn-vertical btn-lg" onclick="document.location='{{ route('my.books') }}'">Библиография</button>
                     </div>
-                    <div class="col p-1">
-                        <button type="button" class="btn btn-vertical btn-primary btn-lg" onclick="document.location='{{ route('my.books') }}'">Библиография</button>
-                    </div>
-                </div>
 
                 <div class="col text-end">
-                    <div class="col p-1">
-                        <button type="button" class="btn btn-vertical btn-primary btn-lg">Фильмы</button>
-                    </div>
-                    <div class="col p-1">
-                        <button type="button" class="btn btn-vertical btn-primary btn-lg">Игры</button>
+                    <div class="col">
+                        <button type="button" class="btn btn-vertical btn-lg">Фильмы</button>
                     </div>
                 </div>
 
@@ -50,7 +42,7 @@
         <div class="container-fluid">
             <div class="row">
                     <div class="col p-1 text-center">
-                        <button type="button" class="btn btn-horizont btn-primary btn-lg">Бестирарий</button>
+                        <button type="button" class="btn btn-horizont btn-lg">Бестирарий</button>
                     </div>
             </div>
         </div>

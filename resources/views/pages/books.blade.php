@@ -24,7 +24,7 @@
 
                     <div class="col text-end">
                         <div class="col p-1">
-                            <button type="button" class="btn btn-bio btn-primary btn-lg" onclick="document.location='{{ route('my.home') }}'">Домой</button>
+                            <button type="button" class="btn btn-vertical btn-lg" onclick="document.location='{{ route('my.home') }}'">Домой</button>
                         </div>
                     </div>
 
@@ -82,7 +82,7 @@
             <div class="container-fluid">
                 <div class="row">
                     <div class="col p-1 text-center">
-                        <button type="button" class="btn btn-horizont btn-primary btn-lg">Галерея</button>
+                        <button type="button" class="btn btn-horizont btn-lg">Галерея</button>
                     </div>
                 </div>
             </div>

@@ -196,8 +196,8 @@ p.current.show() //only herp gets run
     </div>
 
 
-    <div id="leftControl" class="control btn btn-danger">
-{{--        <img id="leftArrow" class="arrow left" style="width:60px" src="demo/assets/arrowleft2.png"></img>--}}
+    <div id="leftControl" class="control">
+        <img id="leftArrow" class="arrow left" style="width:60px" src="img/buttons/arrowleft.png"></img>
         <a id="leftText" class="dirText" style="float:right"> Test</a>
     </div>
 

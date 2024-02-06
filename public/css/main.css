@@ -22,15 +22,13 @@ h1, h2 {
     color: rgba(208, 213, 12, 0.9);
 }
 
-
-.btn-vertical {
-    width: 10rem;
+.btn {
+    width: 12rem;
     height: 4rem;
-}
-
-.btn-horizont {
-    width: 10rem;
-    height: 4rem;
+    background-image: url("../img/buttons/buttonMain.png");
+    background-repeat: no-repeat round;
+    color: grey;
+    --bs-btn-hover-color: #efbf03;
 }
 
 footer {
