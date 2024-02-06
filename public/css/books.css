@@ -4,28 +4,3 @@
     height:100%;
     background-size:cover;
 }
-
-.content-text {
-    font-style: inherit;
-    position: relative;
-}
-
-h1 {
-    font-size: 3rem;
-}
-
-.btn-vertical {
-    width: 10rem;
-    height: 4rem;
-}
-
-.btn-horizont {
-    width: 10rem;
-    height: 4rem;
-}
-
-footer {
-    position: fixed;
-    bottom: 0;
-    width: 100%;
-}

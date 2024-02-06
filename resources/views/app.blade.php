@@ -15,7 +15,7 @@
         @yield('title')
     </title>
 </head>
-<body class="background">
+<body>
 
 @yield('content')
 

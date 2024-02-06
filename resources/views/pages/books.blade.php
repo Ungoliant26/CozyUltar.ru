@@ -6,36 +6,18 @@
 
 @section('content')
 
-    <div class="background-books">
-
-        <header class="content-text">
-            <div class="container-fluid">
-                <div class="row">
-                    <div class="col-lg-10 mt-lg-5 col-md mt-md col-sm mt-sm text-lg-end text-md-center text-sm-center">
-                        <h1>Books</h1>
-                    </div>
-                </div>
+    <div class="container-fluid background-books">
+        <div class="row">
+            <div class="col-md-12 cu-header">
+                    <h1 class="main-h1">
+                        Stories and novels</h1>
             </div>
-        </header>
-
-        <section class="content-bio-media">
-            <div class="container-fluid">
-                <div class="row">
-
-                    <div class="col text-end">
-                        <div class="col p-1">
-                            <button type="button" class="btn btn-vertical btn-lg" onclick="document.location='{{ route('my.home') }}'">Домой</button>
-                        </div>
-                    </div>
-
-                </div>
+            <div class="col-md-3 cu-sidebar-left text-start">
+                <button type="button" class="btn cu-btn-main btn-lg" onclick="document.location='{{ route('my.home') }}'">Домой</button>
             </div>
-        </section>
-
-        <section class="content-books-table">
-            <div class="container text-center">
+            <div class="col-md-6 cu-content">
                 <table class="table caption-top table-dark border border-danger table-bordered">
-                    <caption><h2>Официальные произведения</h2></caption>
+                    <caption><h2 class="books-h2">Официальные произведения</h2></caption>
                     <thead>
                     <tr>
                         <th scope="col">№</th>
@@ -73,21 +55,14 @@
                     </tr>
                     </tbody>
                 </table>
-
             </div>
-
-        </section>
-
-        <footer>
-            <div class="container-fluid">
-                <div class="row">
-                    <div class="col p-1 text-center">
-                        <button type="button" class="btn btn-horizont btn-lg">Галерея</button>
-                    </div>
-                </div>
+            <div class="col-md-3 cu-sidebar-right text-end">
+                    <button type="button" class="btn cu-btn-main btn-lg" onclick="document.location='{{ route('my.home') }}'">Домой</button>
             </div>
-        </footer>
-
+            <div class="col-md-12 cu-footer text-center">
+                    <button type="button" class="btn cu-btn-main btn-lg mb-2">Галерея</button>
+            </div>
+        </div>
     </div>
 
 @endsection
