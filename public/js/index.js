@@ -26,8 +26,8 @@ $(document).ready(function () {
 
     parallax
         // .add($("#features"))
-        .add($("#index"))
-        .add($("#index2"));
+        .add($("#home"))
+        .add($("#books"));
     // .add($("#boo"))
     // .add($("#sandbox"))
     // .add($("#me"));
@@ -42,15 +42,17 @@ $(document).ready(function () {
 
 
     //Setting up page navigation
-    parallax.index.onload = function () {
-        setRight("index2", "Books");
+    parallax.home.onload = function () {
+        setRight("books", "Книги");
+        setBottom("gallery", "Галерея");
+        setLeft("books", "Книги");
         // setRight("features", "Features");
         // setTop("sandbox", "SandBox");
         // setLeft("me", "The Guy");
     };
 
-    parallax.index2.onload = function () {
-        setBottom("index", "Home", butt.but2);
+    parallax.books.onload = function () {
+        setLeft("home", "Home");
     };
     //
     // parallax.features.onload = function () {
@@ -66,7 +68,7 @@ $(document).ready(function () {
 
     //Sets the correct triggers for the arrows, plus arrow keys
     function setRight(page, text, url = false) {
-        $("#rightText").text(text);
+        // $("#rightText").text(text);
         $("#rightControl").show().unbind('click').click(function () {
             parallax[page].right();
         });
@@ -76,7 +78,7 @@ $(document).ready(function () {
     }
 
     function setLeft(page, text) {
-        $("#leftText").text(text);
+        // $("#leftText").text(text);
         $("#leftControl").show().unbind('click').click(function () {
             parallax[page].left();
         });
@@ -86,7 +88,7 @@ $(document).ready(function () {
     }
 
     function setTop(page, text) {
-        $("#topText").text(text);
+        // $("#topText").text(text);
         $("#topControl").show().unbind('click').click(function () {
             parallax[page].top();
         });
@@ -96,11 +98,11 @@ $(document).ready(function () {
     }
 
     function setBottom(page, text, url = false) {
-        if (url) {
-            $("#bottomArrow").attr('src', butt.but1);
-            // https://api.jquery.com/toggleClass/
-        }
-        $("#bottomText").text(text);
+        // if (url) {
+        //     $("#bottomArrow").attr('src', butt.but1);
+        //     // https://api.jquery.com/toggleClass/
+        // }
+        // $("#bottomText").text(text);
         $("#bottomControl").show().unbind('click').click(function () {
             parallax[page].bottom();
         });
@@ -110,40 +112,40 @@ $(document).ready(function () {
     }
 
     //The fadey bits
-    $("#bottomControl").mouseenter(function () {
-        $("#bottomArrow").fadeTo(500, 1);
-        $("#bottomText").fadeTo(500, 1);
-    }).mouseleave(function () {
-        $("#bottomArrow").stop().fadeTo(500, 0.2);
-        $("#bottomText").stop().fadeTo(500, 0);
-    });
-
-    $("#leftControl").mouseenter(function () {
-        $("#leftArrow").fadeTo(500, 1);
-        $("#leftText").fadeTo(500, 1);
-    }).mouseleave(function () {
-        $("#leftArrow").stop().fadeTo(500, 0.2);
-        $("#leftText").stop().fadeTo(500, 0);
-    });
-
+    // $("#bottomControl").mouseenter(function () {
+    //     $("#bottomArrow").fadeTo(500, 1);
+    //     $("#bottomText").fadeTo(500, 1);
+    // }).mouseleave(function () {
+    //     $("#bottomArrow").stop().fadeTo(500, 0.2);
+    //     $("#bottomText").stop().fadeTo(500, 0);
+    // });
+    //
+    // $("#leftControl").mouseenter(function () {
+    //     $("#leftArrow").fadeTo(500, 1);
+    //     $("#leftText").fadeTo(500, 1);
+    // }).mouseleave(function () {
+    //     $("#leftArrow").stop().fadeTo(500, 0.2);
+    //     $("#leftText").stop().fadeTo(500, 0);
+    // });
+    //
     $("#rightControl").mouseenter(function () {
-        $("#rightArrow").fadeTo(500, 1);
+        $("#rightControl").fadeTo(500, 1);
         $("#rightText").fadeTo(500, 1);
     }).mouseleave(function () {
-        $("#rightArrow").stop().fadeTo(500, 0.2);
+        $("#rightControl").stop().fadeTo(500, 0.2);
         $("#rightText").stop().fadeTo(500, 0);
     });
-
-    $("#topControl").mouseenter(function () {
-        $("#topArrow").fadeTo(500, 1);
-        $("#topText").fadeTo(500, 1);
-    }).mouseleave(function () {
-        $("#topArrow").stop().fadeTo(500, 0.2);
-        $("#topText").stop().fadeTo(500, 0);
-    });
+    //
+    // $("#topControl").mouseenter(function () {
+    //     $("#topArrow").fadeTo(500, 1);
+    //     $("#topText").fadeTo(500, 1);
+    // }).mouseleave(function () {
+    //     $("#topArrow").stop().fadeTo(500, 0.2);
+    //     $("#topText").stop().fadeTo(500, 0);
+    // });
 
 
     $(".control").hide();
-    parallax.index.show();
+    parallax.home.show();
 
 });

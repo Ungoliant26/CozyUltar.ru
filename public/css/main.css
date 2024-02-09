@@ -1,21 +1,27 @@
+body {
+    overflow: hidden;
+}
+
+.background {
+    width: 100%;
+    height: 100%;
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+}
+
 .background-ctulhu {
-    background: url("../img/pages/home/Main1.webp") center no-repeat;
-    width:100%;
-    height:100%;
-    background-size:cover;
+    background-image: url("../img/pages/home/Main1.webp");
 }
 
 .background-books {
-    background: url("../img/pages/books/Dagon-6.webp") center no-repeat;
-    width:100%;
-    height:100%;
-    background-size:cover;
+    background-image: url("../img/pages/books/Dagon-6.webp");
 }
 
-/*.content-text {*/
-/*    font-style: inherit;*/
-/*    position: relative;*/
-/*}*/
+.content-text {
+    font-style: inherit;
+    position: relative;
+}
 
 .main-h1 {
     font-size: 5rem;
@@ -33,52 +39,92 @@
     background-color: rgba(0, 0, 0, 0.49);
 }
 
-.cu-btn-main {
-    width: 18rem;
-    height: 6rem;
-    background-image: url("../img/buttons/buttonMain.png");
-    background-repeat: no-repeat round;
+.but-h, .but-v {
+    height: 81px;
+    background-image: url("../img/buttons/buttonMain1.png");
+    background-repeat: no-repeat;
     color: grey;
-    --bs-btn-hover-color: #efbf03;
-    margin-top: 14rem;
+    /*text-align: center;*/
     font-family: "Ustroke";
-    font-size: 2rem;
+    font-size: 40px;
+    opacity: 0.2;
 }
 
-.cu-footer {
-    bottom: 0;
-    width: 100%;
-    position: absolute;
+.dirText {
+    opacity: 0;
+}
+
+/*.but-h:hover, .but-v:hover {*/
+/*    color: #efbf03;*/
+/*}*/
+
+
+/*.cu-footer {*/
+/*    bottom: 0;*/
+/*    width: 100%;*/
+/*    position: absolute;*/
+/*}*/
+
+.control {
+    position: fixed;
+    width: 250px;
+    cursor: pointer;
+}
+
+.but-h {
+    top: 50%;
+    transform: translate(0%, -50%);
+}
+
+.but-v {
+    left: 50%;
+    transform: translate(-50%, 0%);
+}
+
+#rightControl {
+    right: 10px;
+}
+
+#leftControl {
+    left: 10px;
+}
+
+#topControl {
+    top: 10px;
+}
+
+#bottomControl {
+    bottom: 10px;
 }
 
 @font-face {
-font-family: "Ustroke";
-src: url("../fonts/Ustroke-Regular.ttf") format("truetype");
+    font-family: "Ustroke";
+    src: url("../fonts/Ustroke-Regular.ttf") format("truetype");
     font-style: normal;
     font-weight: normal;
 }
 
-@media (max-width: 1240px) {
-    .cu-btn-main {
-        max-width: 12rem;
-        max-height: 4rem;
-        font-size: 1.2rem;
-    }
+/*@media (max-width: 1240px) {*/
+/*    .cu-btn-main {*/
+/*        max-width: 12rem;*/
+/*        max-height: 4rem;*/
+/*        font-size: 1.2rem;*/
+/*    }*/
 
-}
+/*}*/
 
-@media (max-width: 850px) {
+/*@media (max-width: 850px) {*/
 
-}
+/*}*/
 
-@media (max-width: 768px) {
+/*@media (max-width: 768px) {*/
 
-}
+/*}*/
 
-@media (max-width: 480px) {
+/*@media (max-width: 480px) {*/
 
-}
+/*}*/
 
-@media (max-width: 320px) {
+/*@media (max-width: 320px) {*/
 
-}
+/*}*/

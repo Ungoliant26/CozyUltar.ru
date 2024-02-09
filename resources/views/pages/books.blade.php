@@ -13,7 +13,7 @@
                         Stories and novels</h1>
             </div>
             <div class="col-md-3 cu-sidebar-left text-start">
-                <button type="button" class="btn cu-btn-main btn-lg" onclick="document.location='{{ route('my.home') }}'">Домой</button>
+                <button type="button" class="btn cu-btn-left btn-lg" onclick="document.location='{{ route('my.home') }}'">Домой</button>
             </div>
             <div class="col-md-6 cu-content">
                 <table class="table caption-top table-dark border border-danger table-bordered">
@@ -57,10 +57,10 @@
                 </table>
             </div>
             <div class="col-md-3 cu-sidebar-right text-end">
-                    <button type="button" class="btn cu-btn-main btn-lg" onclick="document.location='{{ route('my.home') }}'">Домой</button>
+                    <button type="button" class="btn cu-btn-right btn-lg" onclick="document.location='{{ route('my.home') }}'">Домой</button>
             </div>
             <div class="col-md-12 cu-footer text-center">
-                    <button type="button" class="btn cu-btn-main btn-lg mb-2">Галерея</button>
+                    <button type="button" class="btn cu-btn-bottom btn-lg mb-2">Галерея</button>
             </div>
         </div>
     </div>

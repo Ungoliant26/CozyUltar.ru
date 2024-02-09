@@ -1,15 +1,14 @@
 <!doctype html>
 <html lang="en">
 <head>
-    <!-- Required meta tags -->
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
 
     <link rel="shortcut icon" href="{{ asset('img/pages/home/cthulhuIco2.jpg') }}" type="image/x-icon">
-    <!-- Bootstrap CSS -->
+
+{{--    <link rel="Stylesheet" type="text/css" href="{{ asset('css/xo.css') }}"/>--}}
     <link href="{{ asset('css/bootstrap.min.css') }}" rel="stylesheet">
     <link href="{{ asset('css/main.css') }}" rel="stylesheet">
-    <link href="{{ asset('css/books.css') }}" rel="stylesheet">
 
     <title>
         @yield('title')
@@ -19,15 +18,10 @@
 
 @yield('content')
 
+<script type="text/javascript" src="{{ asset('js/jq.js') }}"></script>
 <script src="{{ asset('js/bootstrap.bundle.min.js') }}"></script>
-
-<script type="text/javascript" src="{{ asset('vendors/Parallaxjs/demo/libs/jq.js') }}"></script>
- <link rel="Stylesheet" type="text/css" href="{{ asset('vendors/Parallaxjs/demo/libs/xo.css') }}" />
-
-<script src="{{ asset('vendors/Parallaxjs/parallax.min.js') }}"></script>
-<script type="text/javascript" src="{{ asset('vendors/Parallaxjs/demo/index.js') }}"></script>
-<script type="text/javascript" src="{{ asset('vendors/Parallaxjs/demo/examples.js') }}"></script>
- <link rel="Stylesheet" type="text/css" href="{{ asset('vendors/Parallaxjs/demo/index.css') }}" />
+<script src="{{ asset('js/parallax.min.js') }}"></script>
+<script type="text/javascript" src="{{ asset('js/index.js') }}"></script>
 
 </body>
 </html>
