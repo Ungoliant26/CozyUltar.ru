@@ -43,16 +43,14 @@ $(document).ready(function () {
 
     //Setting up page navigation
     parallax.home.onload = function () {
-        setRight("books", "Книги");
+        // setTop("books", "Фильмы");
         setBottom("gallery", "Галерея");
         setLeft("books", "Книги");
         // setRight("features", "Features");
-        // setTop("sandbox", "SandBox");
-        // setLeft("me", "The Guy");
     };
 
     parallax.books.onload = function () {
-        setLeft("home", "Home");
+        setRight("home", "Домой");
     };
     //
     // parallax.features.onload = function () {
@@ -68,7 +66,7 @@ $(document).ready(function () {
 
     //Sets the correct triggers for the arrows, plus arrow keys
     function setRight(page, text, url = false) {
-        // $("#rightText").text(text);
+        $("#rightText").text(text);
         $("#rightControl").show().unbind('click').click(function () {
             parallax[page].right();
         });
@@ -78,7 +76,7 @@ $(document).ready(function () {
     }
 
     function setLeft(page, text) {
-        // $("#leftText").text(text);
+        $("#leftText").text(text);
         $("#leftControl").show().unbind('click').click(function () {
             parallax[page].left();
         });
@@ -88,7 +86,7 @@ $(document).ready(function () {
     }
 
     function setTop(page, text) {
-        // $("#topText").text(text);
+        $("#topText").text(text);
         $("#topControl").show().unbind('click').click(function () {
             parallax[page].top();
         });
@@ -102,7 +100,7 @@ $(document).ready(function () {
         //     $("#bottomArrow").attr('src', butt.but1);
         //     // https://api.jquery.com/toggleClass/
         // }
-        // $("#bottomText").text(text);
+        $("#bottomText").text(text);
         $("#bottomControl").show().unbind('click').click(function () {
             parallax[page].bottom();
         });
@@ -111,38 +109,38 @@ $(document).ready(function () {
         };
     }
 
-    //The fadey bits
-    // $("#bottomControl").mouseenter(function () {
-    //     $("#bottomArrow").fadeTo(500, 1);
-    //     $("#bottomText").fadeTo(500, 1);
-    // }).mouseleave(function () {
-    //     $("#bottomArrow").stop().fadeTo(500, 0.2);
-    //     $("#bottomText").stop().fadeTo(500, 0);
-    // });
-    //
-    // $("#leftControl").mouseenter(function () {
-    //     $("#leftArrow").fadeTo(500, 1);
-    //     $("#leftText").fadeTo(500, 1);
-    // }).mouseleave(function () {
-    //     $("#leftArrow").stop().fadeTo(500, 0.2);
-    //     $("#leftText").stop().fadeTo(500, 0);
-    // });
-    //
-    $("#rightControl").mouseenter(function () {
-        $("#rightControl").fadeTo(500, 1);
-        $("#rightText").fadeTo(500, 1);
+    //Анимации подсветки и затухания
+    $("#bottomControl").mouseenter(function () {
+        // $("#bottomControl").stop().fadeTo(300, 1);
+        $("#bottomText").stop().fadeTo(500, 1);
     }).mouseleave(function () {
-        $("#rightControl").stop().fadeTo(500, 0.2);
-        $("#rightText").stop().fadeTo(500, 0);
+        // $("#bottomControl").stop().fadeTo(600, 0.2);
+        $("#bottomText").stop().fadeTo(700, 0);
     });
-    //
-    // $("#topControl").mouseenter(function () {
-    //     $("#topArrow").fadeTo(500, 1);
-    //     $("#topText").fadeTo(500, 1);
-    // }).mouseleave(function () {
-    //     $("#topArrow").stop().fadeTo(500, 0.2);
-    //     $("#topText").stop().fadeTo(500, 0);
-    // });
+
+    $("#leftControl").mouseenter(function () {
+        // $("#leftControl").stop().fadeTo(300, 1);
+        $("#leftText").stop().fadeTo(500, 1);
+    }).mouseleave(function () {
+        // $("#leftControl").stop().fadeTo(600, 0.2);
+        $("#leftText").stop().fadeTo(700, 0);
+    });
+
+    $("#rightControl").mouseenter(function () {
+        // $("#rightControl").stop().fadeTo(300, 1);
+        $("#rightText").stop().fadeTo(500, 1);
+    }).mouseleave(function () {
+        // $("#rightControl").stop().fadeTo(600, 0.2);
+        $("#rightText").stop().fadeTo(700, 0);
+    });
+
+    $("#topControl").mouseenter(function () {
+        // $("#topControl").stop().fadeTo(300, 1);
+        $("#topText").stop().fadeTo(500, 1);
+    }).mouseleave(function () {
+        // $("#topControl").stop().fadeTo(600, 0.2);
+        $("#topText").stop().fadeTo(700, 0);
+    });
 
 
     $(".control").hide();

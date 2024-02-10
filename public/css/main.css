@@ -43,20 +43,24 @@ body {
     height: 81px;
     background-image: url("../img/buttons/buttonMain1.png");
     background-repeat: no-repeat;
-    color: grey;
-    /*text-align: center;*/
+    color: #efbf03;
     font-family: "Ustroke";
     font-size: 40px;
     opacity: 0.2;
 }
 
+
 .dirText {
+    text-align: center;
+    margin-top: 10px;
     opacity: 0;
+    /*display: none;*/
 }
 
-/*.but-h:hover, .but-v:hover {*/
-/*    color: #efbf03;*/
-/*}*/
+.but-h:hover, .but-v:hover, .dirText:hover {
+    color: #efbf03;
+    opacity: 1;
+}
 
 
 /*.cu-footer {*/
