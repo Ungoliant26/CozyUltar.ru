@@ -27,8 +27,8 @@ $(document).ready(function () {
     parallax
         // .add($("#features"))
         .add($("#home"))
-        .add($("#books"));
-    // .add($("#boo"))
+        .add($("#books"))
+        .add($("#bio"))
     // .add($("#sandbox"))
     // .add($("#me"));
 
@@ -53,11 +53,11 @@ $(document).ready(function () {
         setRight("home", "Домой");
         setLeft("bio", "Биография");
     };
-    //
-    // parallax.features.onload = function () {
-    //     setLeft("index", "Home");
-    //     setRight("me", "The Guy");
-    // };
+
+    parallax.bio.onload = function () {
+        // setLeft("index", "Home");
+        setRight("books", "Библиография");
+    };
     //
     // parallax.me.onload = function () {
     //     setLeft("features", "Features");

@@ -18,6 +18,10 @@ body {
     background-image: url("../img/pages/books/Dagon-6.webp");
 }
 
+.background-bio {
+    background-image: url("../img/pages/bio/LovecraftPhoto1.webp");
+}
+
 .content-text {
     font-style: inherit;
     position: relative;
@@ -61,6 +65,22 @@ body {
     opacity: 1;
 }
 
+.bioFont {
+    color: #efbf03;
+    background-color: rgba(0, 0, 0, 0.73);
+    font-family: "Ostrovsky";
+    font-size: 24px;
+    text-align: justify;
+    text-indent: 30px;
+    line-height: 40px;
+    /*margin-left: 5px;*/
+    /*margin-right: 5px;*/
+}
+
+.cu-content-bio {
+    margin-right: 50px;
+    margin-left: 50px;
+}
 
 /*.cu-footer {*/
 /*    bottom: 0;*/
@@ -103,6 +123,13 @@ body {
 @font-face {
     font-family: "Ustroke";
     src: url("../fonts/Ustroke-Regular.ttf") format("truetype");
+    font-style: normal;
+    font-weight: normal;
+}
+
+@font-face {
+    font-family: "Ostrovsky";
+    src: url("../fonts/bioFont/Ostrovsky-Bold_0.otf") format("truetype");
     font-style: normal;
     font-weight: normal;
 }

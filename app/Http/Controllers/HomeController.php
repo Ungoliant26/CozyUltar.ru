@@ -11,8 +11,8 @@ class HomeController extends Controller
 //        return view('pages.home');
         return view('pages.home');
     }
-    public function books(): \Illuminate\Contracts\View\Factory|\Illuminate\Contracts\View\View|\Illuminate\Contracts\Foundation\Application
-    {
-        return view('pages.books');
-    }
+//    public function books(): \Illuminate\Contracts\View\Factory|\Illuminate\Contracts\View\View|\Illuminate\Contracts\Foundation\Application
+//    {
+//        return view('pages.books');
+//    }
 }
