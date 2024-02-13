@@ -3,19 +3,19 @@ var rightKey, leftKey, topKey, bottomKey;
 $(document).ready(function () {
 
     //Set up the triggers for the arrow keys
-    $(document).keydown(function (e) {
-        if (e.keyCode == 37 && typeof leftKey === 'function') {
-            leftKey();
-        } else if (e.keyCode == 38 && typeof topKey === 'function') {
-            topKey();
-        } else if (e.keyCode == 39 && typeof rightKey === 'function') {
-            rightKey();
-        } else if (e.keyCode == 40 && typeof bottomKey === 'function') {
-            bottomKey();
-        }
-    });
+    // $(document).keydown(function (e) {
+    //     if (e.keyCode == 37 && typeof leftKey === 'function') {
+    //         leftKey();
+    //     } else if (e.keyCode == 38 && typeof topKey === 'function') {
+    //         topKey();
+    //     } else if (e.keyCode == 39 && typeof rightKey === 'function') {
+    //         rightKey();
+    //     } else if (e.keyCode == 40 && typeof bottomKey === 'function') {
+    //         bottomKey();
+    //     }
+    // });
 
-
+    // Возможная смена вида кнопок на страницах
     // let butt = {
     //     'but1' : 'img/buttons/buttonMain2323232.png',
     //     'but2' : 'URL',
@@ -44,13 +44,14 @@ $(document).ready(function () {
     //Setting up page navigation
     parallax.home.onload = function () {
         // setTop("books", "Фильмы");
-        setBottom("gallery", "Галерея");
-        setLeft("books", "Книги");
-        // setRight("features", "Features");
+        setBottom("creatures", "Бестиарий");
+        setLeft("books", "Библиография");
+        setRight("movies", "Экранизации");
     };
 
     parallax.books.onload = function () {
         setRight("home", "Домой");
+        setLeft("bio", "Биография");
     };
     //
     // parallax.features.onload = function () {
@@ -127,10 +128,10 @@ $(document).ready(function () {
     });
 
     $("#rightControl").mouseenter(function () {
-        // $("#rightControl").stop().fadeTo(300, 1);
+        // $("#rightButton").stop().fadeTo(600, 1);
         $("#rightText").stop().fadeTo(500, 1);
     }).mouseleave(function () {
-        // $("#rightControl").stop().fadeTo(600, 0.2);
+        // $("#rightButton").stop().fadeTo(600, 0.2);
         $("#rightText").stop().fadeTo(700, 0);
     });
 

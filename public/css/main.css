@@ -45,14 +45,13 @@ body {
     background-repeat: no-repeat;
     color: #efbf03;
     font-family: "Ustroke";
-    font-size: 40px;
+    font-size: 27px;
     opacity: 0.2;
 }
 
-
 .dirText {
     text-align: center;
-    margin-top: 10px;
+    margin-top: 20px;
     opacity: 0;
     /*display: none;*/
 }
